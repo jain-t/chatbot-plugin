@@ -1,15 +1,13 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    ppr: true,
-  },
-  images: {
-    remotePatterns: [
-      {
-        hostname: 'avatar.vercel.sh',
-      },
-    ],
+  /* config options here */
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
+    return config;
   },
 };
 

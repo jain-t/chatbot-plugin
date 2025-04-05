@@ -1,61 +1,173 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Next.js AI Chatbot</h1>
-</a>
+# TailAdmin Next.js - Free Next.js Tailwind Admin Dashboard Template
 
-<p align="center">
-  An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel.
-</p>
+TailAdmin is a free and open-source admin dashboard template built on **Next.js and Tailwind CSS** providing developers with everything they need to create a feature-rich and data-driven: back-end, dashboard, or admin panel solution for any sort of web project.
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
-</p>
-<br/>
+![TailAdmin - Next.js Dashboard Preview](./banner.png)
 
-## Features
+With TailAdmin Next.js, you get access to all the necessary dashboard UI components, elements, and pages required to build a high-quality and complete dashboard or admin panel. Whether you're building a dashboard or admin panel for a complex web application or a simple website. 
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports xAI (default), OpenAI, Fireworks, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [NextAuth.js](https://github.com/nextauthjs/next-auth)
-  - Simple and secure authentication
+TailAdmin utilizes the powerful features of **Next.js 15** and common features of Next.js such as server-side rendering (SSR), static site generation (SSG), and seamless API route integration. Combined with the advancements of **React 19** and the robustness of **TypeScript**, TailAdmin is the perfect solution to help get your project up and running quickly.
 
-## Model Providers
+## Overview
 
-This template ships with [xAI](https://x.ai) `grok-2-1212` as the default chat model. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+TailAdmin provides essential UI components and layouts for building feature-rich, data-driven admin dashboards and control panels. It's built on:
 
-## Deploy Your Own
+- Next.js 15.x
+- React 19
+- TypeScript
+- Tailwind CSS V4
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+### Quick Links
+- [✨ Visit Website](https://tailadmin.com)
+- [📄 Documentation](https://tailadmin.com/docs)
+- [⬇️ Download](https://tailadmin.com/download)
+- [🖌️ Figma Design File (Community Edition)](https://www.figma.com/community/file/1463141366275764364)
+- [⚡ Get PRO Version](https://tailadmin.com/pricing)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot&env=AUTH_SECRET&envDescription=Generate%20a%20random%20secret%20to%20use%20for%20authentication&envLink=https%3A%2F%2Fgenerate-secret.vercel.app%2F32&project-name=my-awesome-chatbot&repository-name=my-awesome-chatbot&demo-title=AI%20Chatbot&demo-description=An%20Open-Source%20AI%20Chatbot%20Template%20Built%20With%20Next.js%20and%20the%20AI%20SDK%20by%20Vercel&demo-url=https%3A%2F%2Fchat.vercel.ai&products=%5B%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22ai%22%2C%22productSlug%22%3A%22grok%22%2C%22integrationSlug%22%3A%22xai%22%7D%2C%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22ai%22%2C%22productSlug%22%3A%22api-key%22%2C%22integrationSlug%22%3A%22groq%22%7D%2C%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22storage%22%2C%22productSlug%22%3A%22neon%22%2C%22integrationSlug%22%3A%22neon%22%7D%2C%7B%22type%22%3A%22blob%22%7D%5D)
+### Demos
+- [Free Version](https://nextjs-free-demo.tailadmin.com)
+- [Pro Version](https://nextjs-demo.tailadmin.com)
 
-## Running locally
+### Other Versions
+- [HTML Version](https://github.com/TailAdmin/tailadmin-free-tailwind-dashboard-template)
+- [React Version](https://github.com/TailAdmin/free-react-tailwind-admin-dashboard)
+- [Vue.js Version](https://github.com/TailAdmin/vue-tailwind-admin-dashboard)
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+## Installation
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various AI and authentication provider accounts.
+### Prerequisites
+To get started with TailAdmin, ensure you have the following prerequisites installed and set up:
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+- Node.js 18.x or later (recommended to use Node.js 20.x or later)
+
+### Cloning the Repository
+Clone the repository using the following command:
 
 ```bash
-pnpm install
-pnpm dev
+git clone https://github.com/TailAdmin/free-nextjs-admin-dashboard.git
 ```
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+> Windows Users: place the repository near the root of your drive if you face issues while cloning.
+
+1. Install dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+    > Use `--legacy-peer-deps` flag if you face peer-dependency error during installation.
+
+2. Start the development server:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+## Components
+
+TailAdmin is a pre-designed starting point for building a web-based dashboard using Next.js and Tailwind CSS. The template includes:
+
+- Sophisticated and accessible sidebar
+- Data visualization components
+- Profile management and custom 404 page
+- Tables and Charts(Line and Bar)
+- Authentication forms and input elements
+- Alerts, Dropdowns, Modals, Buttons and more
+- Can't forget Dark Mode 🕶️
+
+All components are built with React and styled using Tailwind CSS for easy customization.
+
+## Feature Comparison
+
+### Free Version
+- 1 Unique Dashboard
+- 30+ dashboard components
+- 50+ UI elements
+- Basic Figma design files
+- Community support
+
+### Pro Version
+- 5 Unique Dashboards: Analytics, Ecommerce, Marketing, CRM, Stocks (more coming soon)
+- 400+ dashboard components and UI elements
+- Complete Figma design file
+- Email support
+
+To learn more about pro version features and pricing, visit our [pricing page](https://tailadmin.com/pricing).
+
+## Changelog
+
+### Version 2.0.2 - [March 25, 2025]
+
+- Upgraded to Next v15.2.3 for [CVE-2025-29927](https://nextjs.org/blog/cve-2025-29927) concerns
+- Included overrides vectormap for packages to prevent peer dependency errors during installation.
+- Migrated from react-flatpickr to flatpickr package for React 19 support
+
+### Version 2.0.1 - [February 27, 2025]
+
+#### Update Overview
+
+- Upgraded to Tailwind CSS v4 for better performance and efficiency.
+- Updated class usage to match the latest syntax and features.
+- Replaced deprecated class and optimized styles.
+
+#### Next Steps
+
+- Run npm install or yarn install to update dependencies.
+- Check for any style changes or compatibility issues.
+- Refer to the Tailwind CSS v4 [Migration Guide](https://tailwindcss.com/docs/upgrade-guide) on this release. if needed.
+- This update keeps the project up to date with the latest Tailwind improvements. 🚀
+
+### v2.0.0 (February 2025)
+A major update focused on Next.js 15 implementation and comprehensive redesign.
+
+#### Major Improvements
+- Complete redesign using Next.js 15 App Router and React Server Components
+- Enhanced user interface with Next.js-optimized components
+- Improved responsiveness and accessibility
+- New features including collapsible sidebar, chat screens, and calendar
+- Redesigned authentication using Next.js App Router and server actions
+- Updated data visualization using ApexCharts for React
+
+#### Breaking Changes
+
+- Migrated from Next.js 14 to Next.js 15
+- Chart components now use ApexCharts for React
+- Authentication flow updated to use Server Actions and middleware
+
+[Read more](https://tailadmin.com/docs/update-logs/nextjs) on this release.
+
+#### Breaking Changes
+- Migrated from Next.js 14 to Next.js 15
+- Chart components now use ApexCharts for React
+- Authentication flow updated to use Server Actions and middleware
+
+### v1.3.4 (July 01, 2024)
+- Fixed JSvectormap rendering issues
+
+### v1.3.3 (June 20, 2024)
+- Fixed build error related to Loader component
+
+### v1.3.2 (June 19, 2024)
+- Added ClickOutside component for dropdown menus
+- Refactored sidebar components
+- Updated Jsvectormap package
+
+### v1.3.1 (Feb 12, 2024)
+- Fixed layout naming consistency
+- Updated styles
+
+### v1.3.0 (Feb 05, 2024)
+- Upgraded to Next.js 14
+- Added Flatpickr integration
+- Improved form elements
+- Enhanced multiselect functionality
+- Added default layout component
+
+## License
+
+TailAdmin Next.js Free Version is released under the MIT License.
+
+## Support
+
+If you find this project helpful, please consider giving it a star on GitHub. Your support helps us continue developing and maintaining this template.
